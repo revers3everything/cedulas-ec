@@ -43,16 +43,6 @@ El script generará un archivo llamado `cedulas_validas.txt` en el mismo directo
 
 El script no requiere librerías externas adicionales, ya que utiliza funcionalidades estándar de Python.
 
-## Algoritmo de Validación
-
-El algoritmo de validación de cédulas ecuatorianas consiste en:
-
-1. Verificar que los dos primeros dígitos correspondan a una provincia válida (entre 01 y 24, o el código especial 30).
-2. Aplicar un cálculo con los dígitos impares y pares de la cédula.
-3. El último dígito de la cédula es un verificador, calculado a partir de los otros 9 dígitos.
-
-Este script genera todas las combinaciones posibles de cédulas que cumplen con estos criterios y las guarda en un archivo de texto.
-
 ## Tamaño del Archivo Generado
 
 El archivo resultante (`cedulas_validas.txt`) tendrá un tamaño aproximado de **1.53 GB**, dado el volumen de combinaciones generadas de un total de 150 millones de cédulas.
